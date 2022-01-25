@@ -1,0 +1,101 @@
+*{
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+
+}
+html,
+body{
+    margin:0;
+    padding: 0;
+   height: 100%;
+   font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    align-items: center;
+}
+
+header{
+    border-bottom: 1px solid white;
+}
+.tittle{
+    color: gainsboro;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+#board-container{ 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-grow: 1;
+overflow:hidden;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.square{
+    border: 2px solid grey;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color:gainsboro ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#game{
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#keyboard-container{
+    height:200px;
+    margin: 0;
+    align-items: center;
+}
+.keyboard-row{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin: 0 auto 8px;
+    touch-action: manipulation;
+}
+.wide-buttons{
+    width: 80px;
+}
+
+.keyboard-row button{
+    font-family: inherit;
+    font-weight: bold;
+    height: 58px;
+    background-color: rgb(139, 153, 158);
+    color: white;
+    cursor: pointer;
+    min-width:45px;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+
+
+
